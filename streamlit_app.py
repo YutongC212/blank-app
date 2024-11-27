@@ -16,8 +16,7 @@ st.sidebar.header("Options")
 # Load Dataset
 @st.cache
 def load_data():
-    url = "https://www.kaggleusercontent.com/datasets/adityakadiwal/water-potability/water_potability.csv"
-    df = pd.read_csv(url)
+    df = pd.read_csv("water_potability.csv")
     return df
 
 data = load_data()
